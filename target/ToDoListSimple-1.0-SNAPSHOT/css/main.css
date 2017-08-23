@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+  min-width: 500px;
+  height: 100%;
+  background:  #979aa5;
+  background: radial-gradient(#1c1225, #979aa5 20%) fixed;
+  background-size: 10px 10px;
+}
+body{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+  padding: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 0 rgb(0, 0, 0);
+  -moz-box-shadow:    0 0 10px 0 rgb(0, 0, 0);
+  box-shadow:         0 0 10px 0 rgb(0, 0, 0);
+}
+.tasks li{
+  list-style: none;
+  padding: 0 20px;
+  border-bottom: 1px solid #000;
+}
+.tasks__header{
+  background: #ccc;
+}
+.tasks__header div{
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.tasks__header div,
+.tasks__item div{
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+}
+.tasks__item div{
+  line-height: 24px;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: normal;
+}
+.task-name{
+  width: 20%;
+}
+.task-description{
+  width: 40%;
+}
+.task-status{
+  width: 20%;
+}
+.task-edit{
+  width: 17%;
+}
+.task-edit form{
+  display: inline-block;
+}
+.btn-edit,
+.btn-delete,
+.btn-ok{
+  width: 50px;
+  margin: 3px;
+  padding: 4px;
+  cursor: pointer;
+}
+.add_task {
+    margin: 20px auto 0;
+    max-width: 360px;
+}
+.add_task fieldset{
+    padding: 10px;
+}
+.add_task p{
+    margin: 5px 0;
+    text-align: center;
+}
+.add_task input,
+.add_task textarea{
+    font-size: 16px;
+}
+.add_task__title{
+    width: 270px;
+}
+.add_task textarea{
+    width: 270px;
+    height: 70px;
+}
+.add_task__status span{
+    font-weight: 900;
+}

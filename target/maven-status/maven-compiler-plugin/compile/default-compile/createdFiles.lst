@@ -1,0 +1,5 @@
+web\app\model\Status.class
+web\app\servlets\ActionWithTaskServlet.class
+web\app\model\Message.class
+web\app\servlets\MainServlet.class
+web\app\model\Task.class
