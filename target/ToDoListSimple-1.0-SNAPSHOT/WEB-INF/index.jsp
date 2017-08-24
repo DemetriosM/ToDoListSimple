@@ -25,7 +25,7 @@
                       </form>
                       <form action = "action" method = "GET">
                         <input type = "hidden" name = "doAction" value = "doDelete">
-                        <input type = "hidden" name = "taskName" value = "${task.getName()}">
+                        <input type = "hidden" name = "taskIndex" value = "${loop.index}">
                         <input type = "submit" class = "btn-delete" name = "doEdit" value = "delete"></input>
                       </form>
                     </div>

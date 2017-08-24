@@ -57,11 +57,12 @@ public class ActionWithTaskServlet extends HttpServlet {
     }
 
     private void deleteAction(HttpServletRequest request, List<Task> tasks, Message message) {
-        String itemName = request.getParameter("taskName");
-        if (tasks.removeIf(t -> t.getName().equals(itemName))) {
+        int taskIndex = Integer.parseInt(request.getParameter("taskIndex"));
+        if (tasks.get(taskIndex).getStatus().equals(Status.DONE)) {
+            tasks.remove(taskIndex);
             message.setText("The task was deleted.");
         } else {
-            message.setText("Something went wrong (or you reloaded the page :) ).");
+            message.setText("The task can be deleted only if its status is DONE (or you reloaded the page :) ).");
         }
     }
 
